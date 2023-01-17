@@ -3,6 +3,8 @@ ASGI config for mealie project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
+Hi
+
 For more information on this file, see
 https://docs.djangoproject.com/en/4.1/howto/deployment/asgi/
 """
