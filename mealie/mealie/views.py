@@ -33,7 +33,7 @@ def mealie_list(request):
         'name' : 'Peter'
     }
         ]
-    return JsonResponse(meal_plan_zwei,safe=False, status=status.HTTP_200_OK)
+    return JsonResponse({meal_plan_zwei} ,safe=False, status=status.HTTP_200_OK)
 
 
   #if request.method == 'POST':
