@@ -6,6 +6,7 @@ from .serializers import MealieSerializer, MealPlanSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
+
 from utils.generate_meal_plans import generate_meal_plans
 
 @api_view(['GET', 'POST'])
@@ -28,7 +29,7 @@ def mealie_list(request):
     goals = [protein_goal, fat_goal, carb_goal]
         # Use the provided goals and nutrition set to generate the meal plan
     meal_plan = generate_meal_plans(nutrition_set, goals)
-    serializer2 = MealPlanSerializer(data=meal_plan)
+    serializer2 = MealPlanSerializer(meal_plan)
 
     return JsonResponse(serializer2.data, safe=False, status=status.HTTP_200_OK)
 
