@@ -9,9 +9,3 @@ class Mealie(models.Model):
     def __str__(self):
         return f"P: {self.protein} F: {self.fat} K: {self.carbohydrate} Set: {self.nutritionSet}"
 
-class MealPlan(models.Model):
-    food = models.TextField()
-    protein_goal = models.IntegerField()
-    fat_goal = models.IntegerField()
-    carbohydrate_goal = models.IntegerField()
-    dict = models.JSONField()

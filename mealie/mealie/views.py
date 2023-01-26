@@ -1,8 +1,8 @@
 import json
 
 from django.http import JsonResponse
-from .models import Mealie, MealPlan
-from .serializers import MealieSerializer, MealPlanSerializer
+from .models import Mealie
+from .serializers import MealieSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -31,14 +31,6 @@ def mealie_list(request):
     meal_plan = generate_meal_plans(nutrition_set, goals)
 
     return JsonResponse(meal_plan.__str__(), safe=False, status=status.HTTP_200_OK)
-
-
-  #if request.method == 'POST':
-       # serializer = MealieSerializer(data = request.data)
-       # if serializer.is_valid():
-           # serializer.save()
-           # return Response(serializer.data, status=status.HTTP_201_CREATED)
-    #
 
 
 
