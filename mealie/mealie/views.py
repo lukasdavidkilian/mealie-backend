@@ -27,9 +27,9 @@ def mealie_list(request):
     carb_goal = int(data.get('carbohydrate'))
     nutrition_set = data.get('nutritionSet')
     goals = [protein_goal, fat_goal, carb_goal]
-        # Use the provided goals and nutrition set to generate the meal plan
+    # Use the provided goals and nutrition set to generate the meal plan
     meal_plan = generate_meal_plans(nutrition_set, goals)
-    print(meal_plan)
+
     return JsonResponse(meal_plan.__str__(), safe=False, status=status.HTTP_200_OK)
 
 
