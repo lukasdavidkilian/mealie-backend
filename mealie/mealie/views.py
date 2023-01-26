@@ -7,7 +7,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from utils import generate_meal_plans
+from utils.generate_meal_plans import generate_meal_plans
 
 @api_view(['GET', 'POST'])
 def mealie_list(request):
