@@ -30,7 +30,7 @@ def mealie_list(request):
     meal_plan = generate_meal_plans(nutrition_set, goals)
     serializer2 = MealPlanSerializer(data=meal_plan)
 
-    return JsonResponse(serializer2, safe=False, status=status.HTTP_200_OK)
+    return JsonResponse(serializer2.data, safe=False, status=status.HTTP_200_OK)
 
 
   #if request.method == 'POST':
