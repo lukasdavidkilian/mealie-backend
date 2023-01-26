@@ -1,3 +1,5 @@
+import json
+
 class Food:
     def __init__(self, name, protein, fat, carbs, amount, unit, recommended_amounts):
         self.name = name
@@ -8,4 +10,17 @@ class Food:
         self.unit = unit
         self.recommended_amounts = recommended_amounts
 
+    def json(self):
+
+        json_dict = {
+            'name': self.name,
+            'protein': self.protein,
+            'fat': self.fat,
+            'carbs': self.carbs,
+            'amount': self.amount,
+            'unit': self.unit,
+            'recommended_amounts': self.recommended_amounts
+        }
+
+        return json.dumps(json_dict)
 

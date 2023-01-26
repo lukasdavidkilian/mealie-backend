@@ -12,8 +12,11 @@ class MealPlan:
 
     def to_json(self):
         # Create a dictionary representation of the object's properties
+
+        food_json = [f.to_json() for f in self.food]
+
         json_dict = {
-            "food": self.food,
+            "food": food_json,
             "protein_goal": self.protein_goal,
             "fat_goal": self.fat_goal,
             "carbohydrate_goal": self.carbohydrate_goal,
