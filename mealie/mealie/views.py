@@ -29,8 +29,8 @@ def mealie_list(request):
     goals = [protein_goal, fat_goal, carb_goal]
         # Use the provided goals and nutrition set to generate the meal plan
     meal_plan = generate_meal_plans(nutrition_set, goals)
-
-    return JsonResponse(json.dumbs(meal_plan), safe=False, status=status.HTTP_200_OK)
+    serializer2 = MealPlanSerializer(meal_plan)
+    return JsonResponse(request.data, safe=False, status=status.HTTP_200_OK)
 
 
   #if request.method == 'POST':
