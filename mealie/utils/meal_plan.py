@@ -1,3 +1,5 @@
+import json
+
 meal_plans = []
 
 
@@ -7,6 +9,10 @@ class MealPlan:
     fat_goal: int
     carbohydrate_goal: int
     dict: {}
+
+
+
+
 
     def __init__(self, food, protein_goal, fat_goal, carbohydrate_goal, amounts_dictionary):
         self.food = food
@@ -19,6 +25,8 @@ class MealPlan:
         self.carbs = 0
         meal_plans.append(self)
         print(self)
+
+
 
     def __str__(self):
         # Initialize a string for the meal plan
@@ -53,3 +61,4 @@ class MealPlan:
 
         # Return the meal plan string and macro nutrient string
         return f"\n{meal_plan_str}\n{macro_str}\n"
+
