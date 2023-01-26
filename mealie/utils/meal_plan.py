@@ -56,7 +56,7 @@ class MealPlan:
         # Loop over the foods in the meal plan
         for food in self.food:
             # Calculate the daily amount of the food
-            daily_amount = food.amount * self.amounts_dictionary[food]
+            daily_amount = food.amount * self.amounts_dictionary[food.name]
 
             # Format the food and its daily amount as a row in the table
             meal_plan_str += (
