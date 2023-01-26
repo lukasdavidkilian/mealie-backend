@@ -24,10 +24,10 @@ def generate_meal_plans(set_name, goals):
                 current_food = random.choice(nutrition_set)
                 if current_food not in plan_array:
                     random_recommended_amount = random.choice(current_food.recommended_amounts)
-                    amounts_dictionary[current_food] = random_recommended_amount
-                    protein -= current_food.protein * amounts_dictionary[current_food]
-                    fat -= current_food.fat * amounts_dictionary[current_food]
-                    carbohydrate -= current_food.carbs * amounts_dictionary[current_food]
+                    amounts_dictionary[current_food.name] = random_recommended_amount
+                    protein -= current_food.protein * amounts_dictionary[current_food.name]
+                    fat -= current_food.fat * amounts_dictionary[current_food.name]
+                    carbohydrate -= current_food.carbs * amounts_dictionary[current_food.name]
                     plan_array.append(current_food)
                     counter += 1
         if -10 <= protein <= 10 and -5 <= fat <= 5 and -10 <= carbohydrate <= 10:

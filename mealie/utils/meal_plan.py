@@ -56,7 +56,7 @@ class MealPlan:
         # Loop over the foods in the meal plan
         for food in self.food:
             # Calculate the daily amount of the food
-            daily_amount = food.amount * self.amounts_dictionary[food]
+            daily_amount = food.amount * self.amounts_dictionary[food.name]
 
             # Format the food and its daily amount as a row in the table
             meal_plan_str += (
@@ -65,9 +65,9 @@ class MealPlan:
             )
 
         # Calculate the total amount of each nutrient in the meal plan
-        protein = sum(food.protein * self.amounts_dictionary[food] for food in self.food)
-        fat = sum(food.fat * self.amounts_dictionary[food] for food in self.food)
-        carbs = sum(food.carbs * self.amounts_dictionary[food] for food in self.food)
+        protein = sum(food.protein * self.amounts_dictionary[food.name] for food in self.food)
+        fat = sum(food.fat * self.amounts_dictionary[food.name] for food in self.food)
+        carbs = sum(food.carbs * self.amounts_dictionary[food.fame] for food in self.food)
 
         # Format the goals and totals for the macro nutrients
         macro_str = (
