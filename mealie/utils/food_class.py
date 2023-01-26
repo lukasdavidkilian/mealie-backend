@@ -10,7 +10,7 @@ class Food:
         self.unit = unit
         self.recommended_amounts = recommended_amounts
 
-    def json(self):
+    def to_json(self):
 
         json_dict = {
             'name': self.name,
