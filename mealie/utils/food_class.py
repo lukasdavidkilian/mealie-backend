@@ -11,8 +11,7 @@ class Food:
         self.recommended_amounts = recommended_amounts
 
     def to_json(self):
-
-        json_food_dict = {
+        return {
             'name': self.name,
             'protein': self.protein,
             'fat': self.fat,
@@ -21,6 +20,4 @@ class Food:
             'unit': self.unit,
             'recommended_amounts': self.recommended_amounts
         }
-
-        return json.dumps(json_food_dict)
 
