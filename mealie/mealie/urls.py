@@ -19,5 +19,6 @@ from mealie import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mealie/', views.mealie_list)
+    path('mealie/', views.mealie_list),
+    path('meals/', views.mealie_list)
 ]
