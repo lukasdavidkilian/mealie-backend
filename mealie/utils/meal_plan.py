@@ -9,6 +9,9 @@ class MealPlan:
     fat_goal: int
     carbohydrate_goal: int
     dict: {}
+    protein: int
+    fat: int
+    carbs: int
 
     def to_json(self):
         # Create a dictionary representation of the object's properties
