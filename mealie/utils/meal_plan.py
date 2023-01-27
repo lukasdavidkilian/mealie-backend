@@ -37,9 +37,9 @@ class MealPlan:
         self.fat_goal = fat_goal
         self.carbohydrate_goal = carbohydrate_goal
         self.amounts_dictionary = amounts_dictionary
-        self.protein = 0
-        self.fat = 0
-        self.carbs = 0
+        self.protein = sum(food.protein * self.amounts_dictionary[food.name] for food in self.food)
+        self.fat = sum(food.fat * self.amounts_dictionary[food.name] for food in self.food)
+        self.carbs = sum(food.carbs * self.amounts_dictionary[food.name] for food in self.food)
         meal_plans.append(self)
         print(self)
 
