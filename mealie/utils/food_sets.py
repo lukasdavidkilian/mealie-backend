@@ -1,5 +1,7 @@
 from .food_class import Food
 
+# Nutrition Sets
+
 nutrition_set_all = []
 nutrition_set_lukas = []
 nutrition_set_daniel = []
