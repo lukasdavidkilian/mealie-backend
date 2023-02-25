@@ -40,11 +40,14 @@ nutrition_sets = {
 # PROTEIN
 
 rinderhackfleisch = Food("Rinderhackfleisch", 25, 9, 0, 100, "g", [2.5, 3, 3.5, 4])
+rinderhackfleischF = Food("Rinderhackfleisch", 25, 9, 0, 100, "g", [2,2.5,3])
 rinderfilet = Food("Rinderfilet", 29.7, 4.3, 0, 100, "g", [2,2.5])
 rinderleber = Food("Rinderleber", 19.2, 3.7, 5.3, 100, "g", [2.5])
 hähnchenbrust = Food("Hähnchenbrust", 30, 0, 0, 100, "g", [2.5, 3, 3.5, 4])
+hähnchenbrustF = Food("Hähnchenbrust", 30, 0, 0, 100, "g", [2.5])
 hühnerherzen = Food("Hühnerherzen", 16, 5, 0, 100, "g", [2])
 putenbrust = Food("Putenbrust", 30, 1, 0, 100, "g", [2.5, 3, 3.5, 4])
+putenbrustF = Food("Putenbrust", 30, 1, 0, 100, "g", [2.5])
 bauernschinken = Food("Bauernschinken", 26.3, 6.8, 1.1, 100, "g", [0.75, 1])
 bacon = Food("Bacon", 14, 28, 0.5, 100, "g", [0.75, 1])
 salami = Food("Salami", 19, 33, 3, 100, "g", [0.7])
@@ -71,11 +74,11 @@ nutrition_set_stefan.extend([rinderhackfleisch, hähnchenbrust, putenbrust, baue
 nutrition_set_schatu.extend([rinderhackfleisch, hähnchenbrust, putenbrust, lachs, garnelen, eier, milch, käse])
 nutrition_set_yasar.extend([rinderhackfleisch, hähnchenbrust, putenbrust, garnelen, eier, milch, käse])
 nutrition_set_sebastian.extend([rinderhackfleisch, rinderleber, hähnchenbrust, hühnerherzen, bauernschinken,seelachs, garnelen, eier, milch])
-nutrition_set_soula.extend([joghurt,rinderhackfleisch, hähnchenbrust, putenbrust, bauernschinken, lachs, garnelen, eier, milch, käse])
+nutrition_set_soula.extend([joghurt,rinderhackfleischF, hähnchenbrustF, putenbrustF, bauernschinken, lachs, garnelen, eier, milch, käse])
 nutrition_set_emil.extend([rinderhackfleisch, hähnchenbrust, putenbrust, eier, milch, bacon, rinderfilet])
 nutrition_set_adrian.extend([rinderhackfleisch, hähnchenbrust, putenbrust, bauernschinken, lachs, garnelen, eier, milch, käse])
 nutrition_set_martin.extend([rinderhackfleisch, hähnchenbrust, putenbrust, bauernschinken, lachs, eier, milch])
-nutrition_set_celina.extend([rinderhackfleisch, hähnchenbrust, putenbrust, eier, milch, käse, rinderfilet, bacon, gouda, salami, parmesan])
+nutrition_set_celina.extend([rinderhackfleischF, hähnchenbrustF, putenbrustF, eier, milch, käse, rinderfilet, bacon, gouda, salami, parmesan])
 # CARBS
 
 reis = Food("Basmati Reis", 8.8, 1, 75, 100, "g", [0.75, 1])
