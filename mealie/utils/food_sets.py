@@ -78,7 +78,7 @@ nutrition_set_soula.extend([joghurt,rinderhackfleischF, hähnchenbrustF, putenbr
 nutrition_set_emil.extend([rinderhackfleisch, hähnchenbrust, putenbrust, eier, milch, bacon, rinderfilet])
 nutrition_set_adrian.extend([rinderhackfleisch, hähnchenbrust, putenbrust, bauernschinken, lachs, garnelen, eier, milch, käse])
 nutrition_set_martin.extend([rinderhackfleisch, hähnchenbrust, putenbrust, bauernschinken, lachs, eier, milch])
-nutrition_set_celina.extend([rinderhackfleischF, hähnchenbrustF, putenbrustF, eier, milch, käse, rinderfilet, bacon, gouda, salami, parmesan])
+nutrition_set_celina.extend([rinderhackfleischF, hähnchenbrustF, putenbrustF, eier, milch, rinderfilet, bacon, gouda, salami, parmesan])
 # CARBS
 
 reis = Food("Basmati Reis", 8.8, 1, 75, 100, "g", [0.75, 1])
@@ -130,7 +130,7 @@ nutrition_set_soula.extend([reis, kartoffeln, süßkartoffeln, honig, banane, ap
 nutrition_set_emil.extend([reis, kartoffeln, süßkartoffeln, honig, banane, apfel, reisflocken])
 nutrition_set_adrian.extend([reis, kartoffeln, buchweizen, honig, banane, paprikarot, mango])
 nutrition_set_martin.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honig, banane, apfel])
-nutrition_set_celina.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honig, banane, apfel, maracuja, orange, milchreis, gurke, karotte])
+nutrition_set_celina.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honig, banane, apfel, milchreis])
 
 # FAT
 
