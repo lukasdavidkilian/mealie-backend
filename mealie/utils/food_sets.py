@@ -135,8 +135,8 @@ nutrition_set_celina.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honi
 # FAT
 
 nusskernmischung = Food("Nusskernmischung", 21, 56, 11, 100, "g", [0.3])
-walnüsse = Food("Avocado", 16, 71, 6, 100, "g", [0.3])
-avocado = Food("Walnüsse", 2, 15, 9, 100, "g", [1.5, 2])
+walnüsse = Food("Walnüsse", 16, 71, 6, 100, "g", [0.3])
+avocado = Food("Avocado", 2, 15, 9, 100, "g", [1.5, 2])
 olivenoel = Food("Olivenöl", 0, 100, 0.2, 100, "g", [0.15, 0.3, 0.45])
 butterschmalz = Food("Butterschmalz", 0.3, 100, 0, 100, "g", [0.15])
 butter = Food("Butter", 0.7, 83.2, 0.7, 100, "g", [0.15])
