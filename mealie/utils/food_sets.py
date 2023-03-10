@@ -131,7 +131,7 @@ nutrition_set_soula.extend([reis, kartoffeln, süßkartoffeln, honig, banane, ap
 nutrition_set_emil.extend([reis, kartoffeln, süßkartoffeln, honig, banane, apfel, reisflocken])
 nutrition_set_adrian.extend([reis, kartoffeln, buchweizen, honig, banane, paprikarot, mango])
 nutrition_set_martin.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honig, banane, apfel])
-nutrition_set_celina.extend([reis, kartoffeln, süßkartoffeln, buchweizen, honig, banane, apfel, milchreis])
+nutrition_set_celina.extend([honig, banane, apfel,maracuja, orange, mango, blaubeeren])
 
 # FAT
 
