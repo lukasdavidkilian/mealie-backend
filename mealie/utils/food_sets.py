@@ -17,26 +17,7 @@ nutrition_set_adrian = []
 nutrition_set_martin = []
 nutrition_set_fabian = []
 nutrition_set_celina = []
-
-nutrition_sets = {
-    "lukas": nutrition_set_lukas,
-    "daniel": nutrition_set_daniel,
-    "all": nutrition_set_all,
-    "standard": nutrition_set_standard,
-    "lucas": nutrition_set_lucas,
-    "rico": nutrition_set_rico,
-    "stefan": nutrition_set_stefan,
-    "schatu": nutrition_set_schatu,
-    "yasar": nutrition_set_yasar,
-    "sebastian": nutrition_set_sebastian,
-    "soula": nutrition_set_soula,
-    "emil": nutrition_set_emil,
-    "adrian": nutrition_set_adrian,
-    "martin": nutrition_set_martin,
-    "fabian": nutrition_set_fabian,
-    "celina": nutrition_set_celina
-
-}
+nutrition_set_standard = []
 
 # PROTEIN
 
@@ -162,7 +143,24 @@ nutrition_set_celina.extend([avocado, butter])
 
 nutrition_set_standard = nutrition_set_all
 
-
+nutrition_sets = {
+    "lukas": nutrition_set_lukas,
+    "daniel": nutrition_set_daniel,
+    "all": nutrition_set_all,
+    "standard": nutrition_set_standard,
+    "lucas": nutrition_set_lucas,
+    "rico": nutrition_set_rico,
+    "stefan": nutrition_set_stefan,
+    "schatu": nutrition_set_schatu,
+    "yasar": nutrition_set_yasar,
+    "sebastian": nutrition_set_sebastian,
+    "soula": nutrition_set_soula,
+    "emil": nutrition_set_emil,
+    "adrian": nutrition_set_adrian,
+    "martin": nutrition_set_martin,
+    "fabian": nutrition_set_fabian,
+    "celina": nutrition_set_celina
+}
 
 
 
