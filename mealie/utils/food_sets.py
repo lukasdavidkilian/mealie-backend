@@ -17,7 +17,6 @@ nutrition_set_adrian = []
 nutrition_set_martin = []
 nutrition_set_fabian = []
 nutrition_set_celina = []
-nutrition_set_standard = nutrition_set_all
 
 nutrition_sets = {
     "lukas": nutrition_set_lukas,
@@ -160,6 +159,10 @@ nutrition_set_emil.extend([nusskernmischung, avocado])
 nutrition_set_adrian.extend([nusskernmischung])
 nutrition_set_martin.extend([nusskernmischung])
 nutrition_set_celina.extend([avocado, butter])
+
+nutrition_set_standard = nutrition_set_all
+
+
 
 
 
