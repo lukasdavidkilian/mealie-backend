@@ -17,11 +17,13 @@ nutrition_set_adrian = []
 nutrition_set_martin = []
 nutrition_set_fabian = []
 nutrition_set_celina = []
+nutrition_set_standard = nutrition_set_all
 
 nutrition_sets = {
     "lukas": nutrition_set_lukas,
     "daniel": nutrition_set_daniel,
     "all": nutrition_set_all,
+    "standard": nutrition_set_standard,
     "lucas": nutrition_set_lucas,
     "rico": nutrition_set_rico,
     "stefan": nutrition_set_stefan,
